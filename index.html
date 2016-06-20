@@ -14,6 +14,17 @@
 <script type="text/javascript" src="love/jscex-async-powerpack.min.js"></script>
 <script type="text/javascript" src="love/functions.js" charset="utf-8"></script>
 <script type="text/javascript" src="love/love.js" charset="utf-8"></script>
+<script type="text/javascript">
+        $(document).ready(function() {
+            $("#song_love")[0].play();
+        });
+
+        function playsound()
+        {
+            $("#song_love")[0].play();
+            $("#song_love")[0].pause();
+        }
+</script>
 <style type="text/css">
 <!--
 .STYLE1 {
@@ -23,7 +34,7 @@
 </style>
 </head>
 <body>
-<audio autoplay="autopaly">
+<audio id="song_love" autoplay="autopaly" preload="auto">
   <source src="love.mp3" type="audio/mp3" />
 </audio>
 <div id="main">
